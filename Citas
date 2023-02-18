@@ -1,0 +1,142 @@
+#include <stdio.h>
+void prospecto (){
+	char uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, diez;
+	int p1, p2, p3, p4, p5, p6, p7, p8, p9, p10;
+	float suma;
+	float porcentaje;
+	
+	
+	//Pregunta 1
+	printf("¿Es de edad similar a la tuya (Dos años menor a dos años mayor)? \n a)Si \t b)No ");
+	
+	scanf( "%c" ,&uno);
+	if (uno== 'a'){
+	p1=1;
+	}
+	else{
+	p1=-1;
+	}
+	printf("%d",p1);
+	//Pregunta 2
+	printf("\n Coinciden en gustos musicales? \n c)Si \t d)Le disgusta el mio o a mi el suyo \t e)Te es indiferente ");
+
+	
+	scanf( "%c" ,&dos);
+	if (dos== 'c'){
+	p2=1;
+	}
+	if(dos=='d'){
+	p2=-1;
+	} else {p2=0;}
+	printf("%d",p2);
+
+	//Pregunta 3
+	printf("\n Te parece atractivo(a)? \n f)Si \t g)No \t h)Te es indiferente ");
+	
+	scanf( "%c" ,&tres);
+if (tres == 'f'){
+	p3=1;
+	}
+	if(tres=='g'){
+	p3=-1;
+	} else {p3=0;}
+		printf("%d",p3);
+
+	//Pregunta 4
+	printf("\n Te gusta a lo que se dedica? \n i)Si \t j)No ");
+	
+	scanf( "%c" ,&cuatro);
+
+if (cuatro== 'i'){
+	p4=1;
+	}
+	else{
+	p4=-1;
+	}
+		printf("%d",p4);
+
+	//Pregunta 5
+	printf("\n Coinciden en genero de peliculas? \n k)Si \t l)Le disgusta el mio o a mi el suyo \t c)Te es indiferente ");
+	
+	scanf( "%c" ,&cinco);
+
+if (cinco == 'k'){
+	p5=1;
+	}
+	if(cinco=='l'){
+	p5=-1;
+	} else {p5=0;}
+	printf("%d",p5);
+
+	//Pregunta 6
+	printf("\n Coinciden en gustos de comida? \n m)Si \t n)Le disgusta el mio o a mi el suyo");
+	
+	scanf( "%c" ,&seis);
+
+if (seis== 'm'){
+	p6=1;
+	}
+	else{
+	p6=-1;
+	}
+		printf("%d",p6);
+
+	//Pregunta 7
+	printf("\n Viven cerca? \n o)Si \t p)No");
+	
+	scanf( "%c" ,&siete);
+
+if (siete== 'o'){
+	p7=1;
+	}
+	else{
+	p7=-1;
+	}
+		printf("%d",p7);
+
+	//Pregunta 8
+	printf("\n Coinciden en gustos sobre mascotas? \n q)Si \t r)No");
+	
+	scanf( "%c" ,&ocho);
+
+if (ocho== 'q'){
+	p8=1;
+	}
+	else{
+	p8=-1;
+	}
+		printf("%d",p8);
+
+	//Pregunta 9
+	printf("\n Coinciden sus planes a futuro (Tener hijos, casarse, etc)? \n s)Si \t t)No");
+	
+	scanf( "%c" ,&nueve);
+
+if (nueve== 's'){
+	p9=1;
+	}
+	else{
+	p9=-1;
+	}
+	printf("%d",p9);
+
+	//Pregunta 10 
+	printf("\n Te gsuta su personalidad? \n u)Si \t v)No");
+	
+	scanf( "%c" ,&diez);
+
+if (diez== 'u'){
+	p10=1;
+	}
+	else{
+	p10=-1;
+	}
+		printf("%d",p10);
+
+suma= p1 + p2 + p3 + p4 + p5 + p6 + p7 + p8 + p9 + p10;
+porcentaje = (suma*10)/100;
+printf("%f",porcentaje);
+}
+int main (){
+prospecto();
+}
